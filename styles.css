@@ -1,31 +1,50 @@
 body {
-    background-color: black;
-    color: white;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  .youtube-link {
-    color: green;
-    text-decoration: underline;
-  }
-  
-  .buy-link {
-    display: block;
-    margin-top: 5px;
-  }
-  
-  a {
-    color: white;
-  }
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 200px;
+  height: auto;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #add8e6;
+  text-align: left;
+  transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -webkit-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -moz-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -o-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -ms-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+}
+
+ul li:first-child {
+  border-top: 1px solid rgb(168, 1, 1);
+}
+
+ul li:hover {
+  padding-left: 20px;
+  font-weight: 600;
+  color: #e4a3a3;
+}
+
+.youtube-link {
+  color: green;
+  text-decoration: underline;
+}
+
+.buy-link {
+  display: block;
+  margin-top: 5px;
+}
+
+a {
+  color: white;
+}

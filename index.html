@@ -6,32 +6,49 @@
 </head>
 <body>
     <h1>Games List</h1>
-    <ul>
-        <li>
-	    <h2>Outlast Trials</h2>
-            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=3nD3sYWy250" target="_blank">Outlast Trials - YouTube</a></span>
-            <span class="buy-link"><a href="https://gg.deals/game/the-outlast-trials/" target="_blank">Buy Outlast Trials</a></span>
-        </li>
-        <li>
-	    <h2>Mortal Kombat</h2>
-            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=thKNo9ZT0PI" target="_blank">Mortal Kombat 1 - YouTube</a></span>
-            <span class="buy-link"><a href="https://gg.deals/game/mortal-kombat-2023/" target="_blank">Buy Mortal Kombat 1</a></span>
-        </li>
-	<li>
-	    <h2>Crime Boss: Rockay City</h2>
-            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=hOpPwTapTfI" target="_blank">Crime Boss: Rockay City - YouTube</a></span>
-            <span class="buy-link"><a href="https://gg.deals/game/crime-boss-rockay-city/" target="_blank">Buy Crime Boss: Rockay City</a></span>
-        </li>
-	<li>
-	    <h2>Little Nightmares II</h2> 
-	    <span class="youtube-link"><a href="https://www.youtube.com/watch?v=91w-eRbS6g0" target="_blank">Little Nightmares II - YouTube</a></span> 
-	    <span class="buy-link"><a href="https://gg.deals/game/little-nightmares-ii/" target="_blank">Buy Little Nightmares II</a></span>
-	</li>
-	<li>
-	    <h2>Garry's Mod</h2>
-            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=uubDhQZ-U64" target="_blank">Garry's Mod - YouTube</a></span>
-            <span class="buy-link"><a href="https://gg.deals/game/garry-s-mod/" target="_blank">Buy Garry's Mod</a></span>
-        </li>
-    </ul>
+    <div class="container">
+        <ul class="item1">
+            <li onclick="showLinks(0)">Outlast Trials</li>
+            <li onclick="showLinks(1)">Mortal Kombat</li>
+            <li onclick="showLinks(2)">Crime Boss: Rockay City</li>
+            <li onclick="showLinks(3)">Little Nightmares II</li>
+            <li onclick="showLinks(4)">Garry's Mod</li>
+        </ul>
+        <div class="links-container">
+            <div id="links-0" class="links">
+                <a href="https://www.youtube.com/watch?v=3nD3sYWy250" target="_blank">Outlast Trials - YouTube</a>
+                <a href="https://gg.deals/game/the-outlast-trials/" target="_blank">Buy Outlast Trials</a>
+            </div>
+            <div id="links-1" class="links">
+                <a href="https://www.youtube.com/watch?v=thKNo9ZT0PI" target="_blank">Mortal Kombat 1 - YouTube</a>
+                <a href="https://gg.deals/game/mortal-kombat-2023/" target="_blank">Buy Mortal Kombat 1</a>
+            </div>
+            <div id="links-2" class="links">
+                <a href="https://www.youtube.com/watch?v=hOpPwTapTfI" target="_blank">Crime Boss: Rockay City - YouTube</a>
+                <a href="https://gg.deals/game/crime-boss-rockay-city/" target="_blank">Buy Crime Boss: Rockay City</a>
+            </div>
+            <div id="links-3" class="links">
+                <a href="https://www.youtube.com/watch?v=91w-eRbS6g0" target="_blank">Little Nightmares II - YouTube</a>
+                <a href="https://gg.deals/game/little-nightmares-ii/" target="_blank">Buy Little Nightmares II</a>
+            </div>
+            <div id="links-4" class="links">
+                <a href="https://www.youtube.com/watch?v=uubDhQZ-U64" target="_blank">Garry's Mod - YouTube</a>
+                <a href="https://gg.deals/game/garry-s-mod/" target="_blank">Buy Garry's Mod</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLinks(index) {
+            const linksContainers = document.getElementsByClassName("links");
+            for (let i = 0; i < linksContainers.length; i++) {
+                linksContainers[i].style.display = "none";
+            }
+            const linksContainer = document.getElementById(`links-${index}`);
+            if (linksContainer) {
+                linksContainer.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
