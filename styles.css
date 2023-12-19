@@ -7,11 +7,16 @@ h1 {
   text-align: center;
 }
 
+.container {
+  display: flex;
+}
+
 ul {
   list-style-type: none;
   width: 200px;
   height: auto;
   padding: 0;
+  margin-right: 20px;
 }
 
 ul li {
@@ -23,26 +28,30 @@ ul li {
   -moz-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
   -o-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
   -ms-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  cursor: pointer;
 }
 
 ul li:first-child {
-  border-top: 1px solid rgb(168, 1, 1);
+  border-top: 1px solid #909;
 }
 
 ul li:hover {
   padding-left: 20px;
   font-weight: 600;
-  color: #e4a3a3;
+  color: #add8e6;
 }
 
-.youtube-link {
-  color: green;
-  text-decoration: underline;
+.links-container {
+  display: none;
 }
 
-.buy-link {
+.links-container.active {
   display: block;
-  margin-top: 5px;
+}
+
+.links {
+  display: none;
+  margin-top: 10px;
 }
 
 a {
