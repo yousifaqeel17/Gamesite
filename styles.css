@@ -49,6 +49,10 @@ ul li:hover {
   display: block;
 }
 
+.links-container.active .links {
+  display: block;
+}
+
 .links {
   display: none;
   margin-top: 10px;
