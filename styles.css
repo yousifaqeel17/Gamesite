@@ -9,14 +9,21 @@ h1 {
 
 .container {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.options {
+  margin-right: 30px;
 }
 
 ul {
   list-style-type: none;
-  width: 200px;
-  height: auto;
   padding: 0;
-  margin-right: 20px;
+  margin: 0;
 }
 
 ul li {
@@ -24,40 +31,26 @@ ul li {
   border-bottom: 1px solid #add8e6;
   text-align: left;
   transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
-  -webkit-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
-  -moz-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
-  -o-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
-  -ms-transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
   cursor: pointer;
 }
 
-ul li:first-child {
-  border-top: 1px solid #909;
-}
-
-ul li:hover {
-  padding-left: 20px;
-  font-weight: 600;
-  color: #add8e6;
-}
-
 .links-container {
-  display: none;
-}
-
-.links-container.active {
-  display: block;
-}
-
-.links-container.active .links {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .links {
   display: none;
-  margin-top: 10px;
 }
 
-a {
-  color: white;
+.links a {
+  display: block;
+  padding: 5px 0;
+  color: #add8e6;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.links a:hover {
+  color: #ffffff;
 }
