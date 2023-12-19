@@ -1,70 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>Game List & Links</title>
 </head>
 <body>
-    <h1>Games List</h1>
-    <div class="container">
-        <div class="options">
-            <ul>
-                <li id="option-0" onclick="showLinks(0)">Outlast Trials</li>
-                <li id="option-1" onclick="showLinks(1)">Mortal Kombat</li>
-                <li id="option-2" onclick="showLinks(2)">Crime Boss: Rockay City</li>
-                <li id="option-3" onclick="showLinks(3)">Little Nightmares II</li>
-                <li id="option-4" onclick="showLinks(4)">Garry's Mod</li>
-                <li id="option-5" onclick="showLinks(5)">Ready or Not</li>
-            </ul>
+    <header>
+        <h1>Games List</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="options">
+                <ul id="gameList">
+                    <li id="option-0" onclick="showGame(0)">Outlast Trials</li>
+                    <li id="option-1" onclick="showGame(1)">Mortal Kombat</li>
+                    <li id="option-2" onclick="showGame(2)">Crime Boss: Rockay City</li>
+                <li id="option-3" onclick="showGame(3)">Little Nightmares II</li>
+                <li id="option-4" onclick="showGame(4)">Garry's Mod</li>
+                <li id="option-5" onclick="showGame(5)">Ready or Not</li>
+                </ul>
+            </div>
+            <div class="game-container">
+                <div id="game-0" class="game">
+                    <h2>Outlast Trials</h2>
+                    <iframe id="video-0" class="video" src="https://www.youtube.com/watch?v=3nD3sYWy250" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/the-outlast-trials/" class="buy-button" target="_blank">Buy Outlast Trials</a>
+                </div>
+                <div id="game-1" class="game">
+                    <h2>Mortal Kombat 1</h2>
+                    <iframe id="video-1" class="video" src="https://www.youtube.com/watch?v=thKNo9ZT0PI" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/mortal-kombat-2023/" class="buy-button" target="_blank">Buy Mortal Kombat 1</a>
+                </div>
+		<div id="game-2" class="game">
+                    <h2>Crime Boss: Rockay City</h2>
+                    <iframe id="video-2" class="video" src="https://www.youtube.com/watch?v=hOpPwTapTfI" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/crime-boss-rockay-city/" class="buy-button" target="_blank">Buy Crime Boss: Rockay City</a>
+                </div>
+		<div id="game-3" class="game">
+                    <h2>Little Nightmares II</h2>
+                    <iframe id="video-3" class="video" src="https://www.youtube.com/watch?v=91w-eRbS6g0" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/little-nightmares-ii/" class="buy-button" target="_blank">Buy Little Nightmares II</a>
+                </div>
+		<div id="game-4" class="game">
+                    <h2>Garry's Mod</h2>
+                    <iframe id="video-4" class="video" src="https://www.youtube.com/watch?v=uubDhQZ-U64" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/garry-s-mod/" class="buy-button" target="_blank">Buy Garry's Mod</a>
+                </div>
+		<div id="game-5" class="game">
+                    <h2>Ready or Not</h2>
+                    <iframe id="video-5" class="video" src="https://www.youtube.com/shorts/MKDQCmhK2Ws" frameborder="0" allowfullscreen></iframe>
+                    <a href="https://gg.deals/game/ready-or-not-1/" class="buy-button" target="_blank">Buy Ready or Not</a>
+                </div>
+            </div>
         </div>
-        <div class="links-container">
-            <div id="links-0" class="links">
-                <a href="https://www.youtube.com/watch?v=3nD3sYWy250" target="_blank">Outlast Trials - YouTube</a>
-                <a href="https://gg.deals/game/the-outlast-trials/" target="_blank">Buy Outlast Trials</a>
-            </div>
-            <div id="links-1" class="links">
-                <a href="https://www.youtube.com/watch?v=thKNo9ZT0PI" target="_blank">Mortal Kombat 1 - YouTube</a>
-                <a href="https://gg.deals/game/mortal-kombat-2023/" target="_blank">Buy Mortal Kombat 1</a>
-            </div>
-            <div id="links-2" class="links">
-                <a href="https://www.youtube.com/watch?v=hOpPwTapTfI" target="_blank">Crime Boss: Rockay City - YouTube</a>
-                <a href="https://gg.deals/game/crime-boss-rockay-city/" target="_blank">Buy Crime Boss: Rockay City</a>
-            </div>
-            <div id="links-3" class="links">
-                <a href="https://www.youtube.com/watch?v=91w-eRbS6g0" target="_blank">Little Nightmares II - YouTube</a>
-                <a href="https://gg.deals/game/little-nightmares-ii/" target="_blank">Buy Little Nightmares II</a>
-            </div>
-            <div id="links-4" class="links">
-                <a href="https://www.youtube.com/watch?v=uubDhQZ-U64" target="_blank">Garry's Mod - YouTube</a>
-                <a href="https://gg.deals/game/garry-s-mod/" target="_blank">Buy Garry's Mod</a>
-            </div>
-            <div id="links-5" class="links">
-                <a href="https://www.youtube.com/shorts/MKDQCmhK2Ws" target="_blank">Ready or Not - YouTube</a>
-                <a href="https://gg.deals/game/ready-or-not-1/" target="_blank">Buy Ready or Not</a>
-            </div>
-        </div>
-    </div>
+    </main>
 
-    <script>
-        function showLinks(index) {
-            const linksContainers = document.getElementsByClassName("links");
-            for (let i = 0; i < linksContainers.length; i++) {
-                linksContainers[i].style.display = "none";
-            }
-            const linksContainer = document.getElementById(`links-${index}`);
-            if (linksContainer) {
-                linksContainer.style.display = "block";
-            }
-
-            const listItems = document.getElementsByTagName("li");
-            for (let i = 0; i < listItems.length; i++) {
-                listItems[i].classList.remove("active");
-            }
-            const selectedListItem = document.getElementById(`option-${index}`);
-            if (selectedListItem) {
-                selectedListItem.classList.add("active");
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
