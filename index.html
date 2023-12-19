@@ -50,6 +50,15 @@
             if (linksContainer) {
                 linksContainer.style.display = "block";
             }
+
+            const listItems = document.getElementsByTagName("li");
+            for (let i = 0; i < listItems.length; i++) {
+                listItems[i].classList.remove("active");
+            }
+            const selectedListItem = document.getElementById(`option-${index}`);
+            if (selectedListItem) {
+            selectedListItem.classList.add("active");
+            }
         }
     </script>
 </body>

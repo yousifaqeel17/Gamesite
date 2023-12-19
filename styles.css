@@ -34,6 +34,12 @@ ul li {
   cursor: pointer;
 }
 
+ul li.active {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #add8e6;
+}
+
 .links-container {
   display: flex;
   flex-direction: column;
