@@ -49,6 +49,10 @@ ul li.active {
   display: none;
 }
 
+.links.active {
+  display: block;
+}
+
 .links a {
   display: block;
   padding: 5px 0;
