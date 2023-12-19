@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game List & Links</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .youtube-link {
+            color: green;
+            text-decoration: underline;
+        }
+        .buy-link {
+            display: block;
+            margin-top: 5px;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Games List</h1>
+    <ul>
+        <li>
+	    <h2>Outlast Trials</h2>
+            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=3nD3sYWy250" target="_blank">Outlast Trials - YouTube</a></span>
+            <span class="buy-link"><a href="https://gg.deals/game/the-outlast-trials/" target="_blank">Buy Outlast Trials</a></span>
+        </li>
+        <li>
+	    <h2>Mortal Kombat</h2>
+            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=thKNo9ZT0PI" target="_blank">Mortal Kombat 1 - YouTube</a></span>
+            <span class="buy-link"><a href="https://gg.deals/game/mortal-kombat-2023/" target="_blank">Buy Mortal Kombat 1</a></span>
+        </li>
+	<li>
+	    <h2>Crime Boss: Rockay City</h2>
+            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=hOpPwTapTfI" target="_blank">Crime Boss: Rockay City - YouTube</a></span>
+            <span class="buy-link"><a href="https://gg.deals/game/crime-boss-rockay-city/" target="_blank">Buy Crime Boss: Rockay City</a></span>
+        </li>
+	<li>
+	    <h2>Little Nightmares II</h2> 
+	    <span class="youtube-link"><a href="https://www.youtube.com/watch?v=91w-eRbS6g0" target="_blank">Little Nightmares II - YouTube</a></span> 
+	    <span class="buy-link"><a href="https://gg.deals/game/little-nightmares-ii/" target="_blank">Buy Little Nightmares II</a></span>
+	</li>
+	<li>
+	    <h2>Garry's Mod</h2>
+            <span class="youtube-link"><a href="https://www.youtube.com/watch?v=uubDhQZ-U64" target="_blank">Garry's Mod - YouTube</a></span>
+            <span class="buy-link"><a href="https://gg.deals/game/garry-s-mod/" target="_blank">Buy Garry's Mod</a></span>
+        </li>
+    </ul>
+</body>
+</html>
