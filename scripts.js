@@ -1,10 +1,10 @@
 function showGame(index) {
     const games = document.querySelectorAll('.game');
-    games.forEach(game => game.classList.add('hidden'));
+    games.forEach(game => game.style.display = 'none');
 
     const selectedGame = document.getElementById(`game-${index}`);
     if (selectedGame) {
-        selectedGame.classList.remove('hidden');
+        selectedGame.style.display = 'block';
     }
 
     const videos = [
