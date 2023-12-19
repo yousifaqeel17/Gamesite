@@ -37,7 +37,7 @@ ul li {
 ul li.active {
   padding-left: 10px;
   font-weight: bold;
-  color: #add8e6;
+  color: #bfe6ad;
 }
 
 .links-container {
@@ -56,11 +56,11 @@ ul li.active {
 .links a {
   display: block;
   padding: 5px 0;
-  color: #db4d4d;
+  color: #59db4d;
   text-decoration: none;
   transition: color 0.3s linear;
 }
 
 .links a:hover {
-  color: #ff1919;
+  color: #37e702;
 }
