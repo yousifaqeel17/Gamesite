@@ -1,4 +1,12 @@
 function showGame(index) {
+    const games = document.querySelectorAll('.game');
+    games.forEach(game => game.classList.add('hidden'));
+
+    const selectedGame = document.getElementById(`game-${index}`);
+    if (selectedGame) {
+        selectedGame.classList.remove('hidden');
+    }
+
     const videos = [
         'https://www.youtube.com/embed/3nD3sYWy250', // Outlast Trials
         'https://www.youtube.com/embed/thKNo9ZT0PI', // Mortal Kombat
