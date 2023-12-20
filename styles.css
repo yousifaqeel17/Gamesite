@@ -1,23 +1,29 @@
 body {
   background-color: black;
   color: white;
+  font-family: Arial, sans-serif; /* Set your desired font family */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 h1 {
   text-align: center;
+  margin-top: 20px; /* Add spacing between header and content */
 }
 
 .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center; /* Center content horizontally */
   align-items: flex-start;
-  max-width: 800px;
+  max-width: 1000px; /* Adjust maximum width */
   margin: 0 auto;
   padding: 20px;
 }
 
 .options {
-  margin-right: 30px;
+  width: 25%; /* Adjust width for navigation */
+  padding-right: 30px; /* Add spacing between navigation and content */
+  border-right: 1px solid #ffffff; /* Add border between navigation and content */
 }
 
 ul {
@@ -27,15 +33,15 @@ ul {
 }
 
 ul li {
-  padding: 10px 0;
+  padding: 15px 20px; /* Increase padding for navigation items */
   border-bottom: 1px solid #ffffff;
   text-align: left;
   transition: padding-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
   cursor: pointer;
+  font-size: 18px; /* Adjust font size */
 }
 
 ul li.active {
-  padding-left: 10px;
   font-weight: bold;
   color: #bfe6ad;
 }
@@ -55,10 +61,11 @@ ul li.active {
 
 .links a {
   display: block;
-  padding: 5px 0;
+  padding: 10px 20px; /* Adjust padding for content links */
   color: #59db4d;
   text-decoration: none;
   transition: color 0.3s linear;
+  font-size: 16px; /* Adjust font size */
 }
 
 .links a:hover {
@@ -69,11 +76,12 @@ ul li.active {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  width: 75%; /* Adjust width for content */
 }
 
 .game {
-  max-width: 400px;
-  margin-bottom: 20px;
+  width: calc(50% - 20px); /* Adjust content width and add gap */
+  margin-bottom: 40px; /* Increase margin between content items */
 }
 
 .hidden {
@@ -93,6 +101,7 @@ ul li.active {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
+  font-size: 16px; /* Adjust font size */
 }
 
 .buy-button:hover {
