@@ -16,6 +16,7 @@ function showGame(index) {
         'https://www.youtube.com/embed/91w-eRbS6g0', // Little Nightmares II
         'https://www.youtube.com/embed/uubDhQZ-U64', // Garry's Mod
         'https://www.youtube.com/embed/MKDQCmhK2Ws', // Ready or Not
+        'https://www.youtube.com/embed/45esM4BGV84', // Devour
     ];
 
     const videoFrame = document.getElementById(`video-${index}`);
