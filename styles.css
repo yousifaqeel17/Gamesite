@@ -96,7 +96,7 @@ ul li.active {
 .buy-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #59db4d;
+  background-color: #0ea700;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -105,5 +105,5 @@ ul li.active {
 }
 
 .buy-button:hover {
-  background-color: #37e702;
+  background-color: #3cff00;
 }
