@@ -22,7 +22,7 @@ h1 {
 
 .options {
   width: 25%; /* Adjust width for navigation */
-  padding-right: 30px; /* Add spacing between navigation and content */
+  padding-right: 20px; /* Add spacing between navigation and content */
   border-right: 1px solid #ffffff; /* Add border between navigation and content */
   margin-right: 40px; /* Add margin for space between the line and content */
 }
