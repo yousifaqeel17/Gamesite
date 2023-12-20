@@ -24,6 +24,7 @@ h1 {
   width: 25%; /* Adjust width for navigation */
   padding-right: 30px; /* Add spacing between navigation and content */
   border-right: 1px solid #ffffff; /* Add border between navigation and content */
+  margin-right: 20px; /* Add margin for space between the line and content */
 }
 
 ul {
